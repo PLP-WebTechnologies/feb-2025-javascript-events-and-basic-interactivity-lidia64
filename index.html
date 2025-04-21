@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- To-Do List -->
+  <div class="container todo-container">
+    <h2>To-Do List of task</h2>
+    <input type="text" id="taskInput" placeholder="Add a new task" />
+    <button class="button" id="addButton">Add Task</button>
+    <ul id="taskList"></ul>
+    <div class="message" id="message"></div>
+  </div>
+
+  <!-- Color Picker -->
+  <div class="container">
+    <h2>Pick a Color to be applied</h2>
+    <input type="color" id="colorPicker" />
+    <div class="selected-color" id="selectedColor">Selected Color: #ffffff</div>
+    <div class="message" id="colorMessage"></div>
+  </div>
+
+  <!-- Quiz Game -->
+  <div class="container quiz-container">
+    <h2>Quiz Game and get result</h2>
+    <div class="question" id="question">What is the capital of France?</div>
+    <div class="answers">
+      <button class="button" data-answer="A">A) Paris</button>
+      <button class="button" data-answer="B">B) London</button>
+      <button class="button" data-answer="C">C) Rome</button>
+      <button class="button" data-answer="D">D) Madrid</button>
+    </div>
+    <div class="score" id="quizScore">Score: 0</div>
+    <div class="feedback" id="quizFeedback"></div>
+  </div>
+
+  <!-- Form -->
+  <div class="container">
+    <h2>Login Form</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <div class="toggle-password">
+        <input type="checkbox" id="showPassword" />
+        <label for="showPassword">&nbsp;Show Password</label>
+      </div>
+      <button type="submit" class="button">Login</button>
+      <div id="loginMessage" class="message"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

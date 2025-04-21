@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    padding: 20px;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #84e090;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+  }
+  
+  .button:hover {
+    background-color: #8aeba2;
+  }
+  
+  .message {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* To-Do List */
+  .todo-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-container li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todo-container li.completed {
+    text-decoration: line-through;
+    background-color: #f4f4f4;
+  }
+  
+  .remove {
+    background-color: #e68277;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  /* Color Picker */
+  input[type="color"] {
+    width: 100px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .selected-color {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  
+  /* Quiz Game */
+  .quiz-container button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quiz-container button:hover {
+    background-color: #218838;
+  }
+  
+  .quiz-container .score {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .quiz-container .feedback {
+    margin-top: 10px;
+    font-size: 16px;
+    color: green;
+  }
+  
+  /* Form */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .toggle-password {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
